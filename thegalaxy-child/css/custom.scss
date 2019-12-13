@@ -1,0 +1,621 @@
+/* color variables */
+
+$colorone: #b5be6a;
+$colortwo: #889c41;
+$colorthree: #b5be6a;
+$background: #ffffff;
+$lightfont: #ffffff;
+$darkfont: #111111;
+$bodyfont: #111111;
+
+/* end color variables */
+
+/* font type */
+
+$fontsans: 'Poppins',sans-serif;
+$fontserif: 'Merriweather', serif;
+
+$raleway: 'Raleway', sans-serif;
+
+/* end font type */
+
+/* start theme edits */
+
+/* top bar */
+
+#top_bar {
+	&.fullwidth,
+	&.containerwidth {
+		background: $colortwo;
+	}
+}
+
+/* attention header */
+
+#attention_bar_header {
+	background: $darkfont;
+	
+	.attention_bar_header_content {
+		h3 {
+			color: $lightfont;
+		}
+		
+		div {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						color: $colortwo;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* header */
+
+a#searchopen,
+a#mobileopen {
+	&:link,
+	&:visited {
+		background: $background;
+		color: $colorone;
+	}
+}
+
+#search,
+#mobile_nav {
+	background: rgba($colorone, .95);
+	
+	#searchform {
+		input[type="submit"] {
+			color: $colorone;
+		}
+	}
+	
+	.mobile_nav_wrapper {
+		#mobile_search {
+			input[type="submit"] {
+				color: $colorone;
+			}
+		}
+	}
+}
+
+.page-id-1191 {
+	header {
+		&#header_page {
+			background: url('../img/header_wedding.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+}
+
+header {
+	
+	&#header_home {
+		background: url('../img/home.jpg') no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;	
+	}
+	
+	&#header_page {
+		background: url('../img/page.jpg') no-repeat;
+		background-size: cover;
+		background-attachment: fixed;	
+	}
+	
+	#nav_bar {
+		
+		#primary_nav {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						color: $lightfont;
+					}
+				}
+			}
+		}
+		
+		&.scroll-fix {
+			background: $background;
+			
+			#primary_nav {
+				ul {
+					li {
+						a:link,
+						a:visited {
+							color: $darkfont;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&#header_home_mobile,
+	&#header_page_mobile {
+		.mobile_navigation_bar {
+			background: $colorone;
+		}
+	}
+	
+	&#header_home {
+		#home_logo {
+			#home_page_nav {
+				ul {
+					li {
+						a:link,
+						a:visited {
+							background: $colortwo;
+							color: $lightfont;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&#header_home_mobile {
+		#home_logo {
+			#home_page_nav {
+				ul {
+					li {
+						a:link,
+						a:visited {
+							background: $colortwo;
+							color: $lightfont;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#bottom_home_page_nav {
+		&.menu-items-1,
+		&.menu-items-2,
+		&.menu-items-3,
+		&.menu-items-4 {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						background: $colorthree;
+					}
+				}
+			}
+		}
+	}
+	
+	.image_overlay {
+		background: rgba($colortwo, .75);
+	}
+}
+
+/* main content areas */
+
+.breadcrumb_wrapper {
+	span.breadcrumbs {
+		a:link,
+		a:visited {
+			color: $colorone;
+		}
+	}
+}
+
+#attention_bar {
+	background: $colorone;
+	
+	.attention_bar_top,
+	.attention_bar_bottom {
+		h3 {
+			color: $lightfont;
+		}
+		
+		ul {
+			li {
+				a:link,
+				a:visited {
+					background: $colortwo;
+					color: $lightfont;
+				}
+			}
+		}
+	}
+}
+
+#call_out_boxes {
+	background: $colorone;
+	
+	.cob_1,
+	.cob_2,
+	.cob_3,
+	.cob_4,
+	.cob_5 {
+		.call_out_boxes_item {
+			.square.fas,
+			.circle.fas {
+				background: $colortwo;
+				color: $lightfont;
+			}
+			
+			h1,h2,h3 {
+				color: $colortwo;
+				font-weight: 600;
+			}
+			
+			p {
+				color: $lightfont;
+			}
+			
+			a:link,
+			a:visited {
+				background: $colortwo;
+				color: $lightfont;
+			}
+		}
+	}
+}
+
+#main {
+	background: $background;
+	
+	.content {
+		h1,h3 {
+			color: $darkfont;
+			font-weight: 600;
+		}
+		
+		h1 {
+			text-transform: uppercase;
+		}
+		
+		h2,h3 {
+			color: $colortwo;
+			text-transform: capitalize;
+		}
+		
+		hr.divider {
+			background: $colortwo;
+		}
+		
+		p {
+			color: $bodyfont;
+			font-family: $raleway;
+			font-weight: 400;
+		}
+		
+		ul {
+			li {
+				color: $bodyfont;
+				font-family: $raleway;
+				font-weight: 400;
+			}
+		}
+		
+		strong {
+			font-weight: 700;
+		}
+		
+		a:link,
+		a:visited {
+			color: $colortwo;
+			font-family: $raleway;
+			font-weight: 400;
+			
+			&.button {
+				background: $colorthree;
+				color: $lightfont;
+				font-weight: 600;
+			}
+		}
+		
+		#gallery {
+			.gallery_wrapper {
+				a:link,
+				a:visited {
+					.filter:hover {
+						background: rgba($colorone, .75);
+					}
+				}
+			}
+		}
+	}
+	
+	.sidebar {
+		.business_information_wrapper {
+			background: $colortwo;
+			
+			h3 {
+				color: $lightfont;
+				font-weight: 600;
+			}
+			
+			p {
+				color: $lightfont;
+				font-family: $raleway;
+				font-weight: 400;
+			}
+			
+			ul.business_hours {
+				li {
+					span {
+						color: $lightfont;
+						font-family: $raleway;
+						font-weight: 400;
+					}
+				}
+			}
+			
+			.contact_info {
+				ul {
+					li {
+						color: $lightfont;
+						font-family: $raleway;
+						font-weight: 400;
+						
+						a:link,
+						a:visited {
+							color: $lightfont;
+							font-family: $raleway;
+							font-weight: 400;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#tabs>ul {
+	li.ui-tabs-active {
+		a:link,
+		a:visited {
+			color: $colorone;
+			border-bottom: 1px solid $colorone;
+		}
+	}
+}
+
+#accordion>h3:hover, 
+#accordion>h3.ui-state-active {
+	color: $colortwo;
+}
+
+#accordion>h3 {
+	border-top: 1px solid $colorone;
+	font-weight: 600;
+}
+
+#parallax {
+	background: url('../img/parallax.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+		
+	.filter {
+		background: rgba($colortwo, .5);
+	}
+}
+
+.edit_button {
+	a:link,
+	a:visited {
+		background: $colorone;
+	}
+}
+
+/* blog page */
+
+.blog_home article.blog_preview {
+	span.edit,
+	span.author,
+	span.date {
+		a:link, 
+		a:visited {
+			color: $colortwo;
+		}
+	}
+}
+
+.blog_sidebar {
+	background: $background;
+	
+	#blog_sidebar_1,
+	#blog_sidebar_2 {
+		ul {
+			li {
+				a:link,
+				a:visited {
+					color: $colortwo;
+				}
+			}
+		}
+	}
+}
+
+article.blog_entry {
+	.meta {
+		span.date,
+		span.author,
+		span.category {
+			a:link,
+			a:visited {
+				color: $colortwo;
+			}
+		}
+	}
+	
+	.tagcloud {
+		a:link,
+		a:visited {
+			border: 1px solid $colortwo;
+			color: $colortwo;
+		}
+	}
+}
+
+/* footer */
+
+footer {
+	background: $darkfont;
+	
+	h3 {
+		color: $lightfont;
+		font-weight: 600;
+	}
+	
+	p {
+		color: $lightfont;
+	}
+	
+	ul {
+		li {
+			a:link,
+			a:visited {
+				color: $lightfont;
+			}
+			
+			.post-date {
+				color: $lightfont;
+			}
+		}
+	}
+	
+	.tagcloud {
+		a:link,
+		a:visited {
+			border: 1px solid $lightfont;
+			color: $lightfont;
+		}
+	}
+}
+
+#copyright {
+	background: $colortwo;
+}
+
+/* responsive media queries - 980 to 1220 */
+
+@media (min-width: 980px) and (max-width: 1220px) {
+	
+	.page-id-1191 {
+		header {
+			&#header_page_mobile {
+				background: url('../img/header_wedding_mobile.jpg') no-repeat;
+				background-size: cover;
+				background-attachment: fixed;	
+			}
+		}
+	}
+	
+	header {
+		&#header_home_mobile {
+			background: url('../img/home.jpg') no-repeat;
+			background-size: 130%;
+			background-attachment: fixed;	
+		}
+		
+		&#header_page_mobile {
+			background: url('../img/page.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+	
+}
+
+/* responsive media queries - 768 to 979 */
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	.page-id-1191 {
+		header {
+			&#header_page_mobile {
+				background: url('../img/header_wedding_mobile.jpg') no-repeat;
+				background-size: cover;
+				background-attachment: fixed;	
+			}
+		}
+	}
+	
+	header {
+		&#header_home_mobile {
+			background: url('../img/home_mobile.jpg') no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;	
+		}
+		
+		&#header_page_mobile {
+			background: url('../img/page_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+	
+}
+
+/* responsive media queries - 480 to 767 */
+
+@media (min-width: 480px) and (max-width: 767px) {
+	
+	.page-id-1191 {
+		header {
+			&#header_page_mobile {
+				background: url('../img/header_wedding_mobile.jpg') no-repeat;
+				background-size: cover;
+				background-attachment: fixed;	
+			}
+		}
+	}
+	
+	header {
+		&#header_home_mobile {
+			background: url('../img/home_mobile.jpg') no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;	
+		}
+		
+		&#header_page_mobile {
+			background: url('../img/page_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+	
+}
+
+/* responsive media queries - 0 to 479 */
+
+@media (min-width: 0px) and (max-width: 479px) {
+	
+	.page-id-1191 {
+		header {
+			&#header_page_mobile {
+				background: url('../img/header_wedding_mobile.jpg') no-repeat;
+				background-size: cover;
+				background-attachment: fixed;	
+			}
+		}
+	}
+	
+	header {
+		&#header_home_mobile {
+			background: url('../img/home_mobile.jpg') no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;	
+		}
+		
+		&#header_page_mobile {
+			background: url('../img/page_mobile.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+	}
+	
+}
+
+/* end theme edits */
