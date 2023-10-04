@@ -498,6 +498,24 @@ footer {
 	background: $colortwo;
 }
 
+#tripleseat_embed_form {
+	input[type="text"],
+	select,
+	textarea {
+		border-radius: 5px;
+		padding: 10px 20px;
+	}
+	
+	input[type="submit"] {
+		background: $colorone;
+		border-radius: 5px;
+		display: inline-block;
+		color: #fff;
+		padding: 10px 20px;
+		font-size: 18px;
+	}
+}
+
 /* responsive media queries - 980 to 1220 */
 
 @media (min-width: 980px) and (max-width: 1220px) {
